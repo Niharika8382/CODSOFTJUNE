@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:cursive;
+    box-sizing: border-box;
+}
+.container1{
+    width: 100%;
+    height: 100vh;
+    background: rgb(53, 52, 52);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calculator{
+    background:linear-gradient(135deg, #ff00d4, #00ddff);
+    padding: 20px;
+    border-radius: 10px;
+}
+.calculator form input{
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgb(244, 98, 154) , 5px 5px 15px rgb(249, 129, 217);
+    background: transparent;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+    margin: 10px;
+
+}
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+form .display input{
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+}
+form input.equal{
+    width: 145px;
+}
+.calculator form input:hover{
+    box-shadow: -8px -8px 15px rgb(249, 91, 151) , 5px 5px 15px rgb(241, 42, 188);
+    
+
+}
+form input.operator {
+    background:rgb(245, 91, 239);
+    box-shadow:-8px -8px 15px rgb(245, 87, 147) , 5px 5px 15px rgb(249, 107, 211) ;
+}
+@media (max-width:375px) and (min-width:210px) {
+    .calculator form input{
+        border: 0;
+        outline: 0;
+        width: 40px;
+        height: 40px;
+        border-radius: 5px;
+        box-shadow: -4px -4px 9px rgb(243, 49, 123) , 2px 2px 9px rgb(249, 129, 217);
+        background: transparent;
+        font-size: 10px;
+        color: black;
+        cursor: pointer;
+        margin: 4px;
+    
+    }
+    .calculator form input:hover{
+        box-shadow: -8px -8px 15px rgb(242, 55, 127) , 5px 5px 15px rgb(241, 42, 188);
+        
+    
+    }
+    form input.operator {
+        background:rgb(245, 91, 239);
+        box-shadow:-8px -8px 15px rgb(245, 87, 147) , 5px 5px 15px rgb(249, 107, 211) ;
+    }
+}
+@media (max-width:250px) {
+    .calculator form input{
+        border: 0;
+        outline: 0;
+        width: 20px;
+        height: 20px;
+        border-radius: 5px;
+        box-shadow: -4px -4px 9px rgb(243, 49, 123) , 2px 2px 9px rgb(249, 129, 217);
+        background: transparent;
+        font-size: 7px;
+        color: black;
+        cursor: pointer;
+        margin: 2px;
+    
+    }
+    .calculator form input:hover{
+        box-shadow: -8px -8px 15px rgb(245, 12, 101) , 5px 5px 15px rgb(241, 42, 188);
+        
+
+    }
+    form input.operator {
+        background:rgb(245, 91, 239);
+        box-shadow:-8px -8px 15px rgb(245, 87, 147) , 5px 5px 15px rgb(249, 107, 211) ;
+    }
+}

@@ -1,0 +1,196 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+html{
+    background:whitesmoke;
+}
+header{
+    
+    height:55px;
+    margin-bottom: 15px;
+}
+li,a,button{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: rgb(32, 25, 16);
+    text-decoration: none;
+
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    
+}
+.logo{
+    cursor: pointer;
+    height: 70px;
+    width: fit-content;
+}
+.navlinks{
+    list-style: none;
+}
+.navlinks li{
+    display: inline-block;      /* list elements will become side by side */
+    padding: 0px 20px;
+}
+.navlinks li a{
+    transition: all .3s ease-in-out 0s;
+    
+}
+.navlinks li a:hover{
+    text-shadow:2px 2px 2px rgb(137, 137, 239);
+    color:rgb(75, 75, 249);  
+    
+    
+}
+
+button{
+    padding: 9px 5px;
+    background-color: rgb(35, 164, 229);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover{
+    background-color: rgb(123, 183, 253);
+    box-shadow: 2px 2px grey;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 90vw;
+    height: 65vh;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  .mySlides:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 12px rgb(76, 148, 250);
+    transition: 1s;
+    transform: scale(1.05);
+  }
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: 0px;
+    padding: 16px;
+    color: rgb(54, 54, 242);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 1s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color:rgb(54, 54, 242);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 1s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 68vh;
+    width: 75vw; 
+    justify-content: space-between;
+    margin: auto;
+}
+.item{
+    height: 63vh;
+    width: 14vw;
+    margin: 10px;
+    padding: 0px;
+    border: 2px solid green;
+    box-shadow: 2px 2px 2px 2px gray;
+}
+.item:hover{
+  cursor: pointer;
+  box-shadow: 2px 2px 12px rgb(76, 148, 250);
+  transition: 1s;
+  transform: scale(1.07);
+}
+.contact{
+  margin-top: 10px;
+  width: 100%;
+  background-color: rgb(76, 148, 250);
+  height: 250px;
+}
+.items{
+  display: flex;
+  justify-content: space-between;
+}
+.icons:hover{
+  box-shadow: 2px 2px rgb(41, 38, 230);
+  transition: 1s;
+  transform: scale(1.3);
+  
+}
+#image{
+  width:13.79vw;
+  height:20vh ;
+}
+#heading{
+  font-size: 1.4vw;
+  font-family: bold;
+}
